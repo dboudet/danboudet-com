@@ -1,3 +1,4 @@
+import AlertDialog from "./AlertDialog"
 import Headshot from "./Headshot"
 
 export default function Hero() {
@@ -9,7 +10,6 @@ export default function Hero() {
             </div>
             <div className="col-half right">
                 <Headshot />
-                <button>About&nbsp;Me</button>
             </div>
         </section>
     )

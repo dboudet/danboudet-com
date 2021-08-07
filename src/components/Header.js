@@ -3,7 +3,7 @@ export default function Header() {
     <header>
         <div id="header-flex-container">
             <h1>
-                Dan Boudet <span class="subhead">&#123;Full&nbsp;Stack&nbsp;Software&nbsp;Engineer&#125;</span>
+                Dan Boudet <span className="subhead">&#123;Full&nbsp;Stack&nbsp;Software&nbsp;Engineer&#125;</span>
             </h1>
             <nav>
                 <ul>

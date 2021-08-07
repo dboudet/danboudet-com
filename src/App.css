@@ -44,7 +44,7 @@ header li a {
 }
 
 section {
-  min-height:40vh;
+  min-height:80vh;
   padding:24px;
 }
 
@@ -72,12 +72,12 @@ section {
   align-items: center;
 }
 #headshot-mask {
-  height: 150px;
-  width: 150px;
+  height: 240px;
+  width: 240px;
   border-radius: 50%;
   background-image: url('./assets/headshot.jpg');
   background-size:contain;
-  margin: 20px 12px;
+  margin: 40px 12px;
 }
 #hero button {
   background-color: #EFEFEF;
@@ -107,7 +107,10 @@ section {
 }
 footer {
   padding:24px;
+}
+footer, footer a {
   color: #EFEFEF;
+  text-decoration: none;
 }
 
 @media screen and (max-width:600px) {
