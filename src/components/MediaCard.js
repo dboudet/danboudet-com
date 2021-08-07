@@ -13,6 +13,7 @@ import futuramaImage from "../assets/futurama-title.jpeg"
 const useStyles = makeStyles({
   root: {
     maxWidth: 345,
+    margin: '20px 10px',
   },
   media: {
     height: 140,

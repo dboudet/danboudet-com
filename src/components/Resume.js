@@ -35,7 +35,7 @@ export default function Resume() {
       target="_blank"
       rel="noreferrer"
     >
-      <ColorButton variant="contained" color="primary" size="large" className={classes.margin} endIcon={<LaunchIcon />}>
+      <ColorButton variant="contained" color="primary" size="large" p="16px" className={classes.margin} endIcon={<LaunchIcon />}>
         RESUME
       </ColorButton>
     </a>
