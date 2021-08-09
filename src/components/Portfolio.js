@@ -1,5 +1,5 @@
 import MediaCard from "./MediaCard"
-import portfolioBackground from "../assets/background-2.jpeg"
+import portfolioBackground from "../assets/background-5.jpeg"
 
 const portfolioStyle = {
   backgroundImage: `url(${portfolioBackground})`,

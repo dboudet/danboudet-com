@@ -1,16 +1,16 @@
 import LaunchIcon from "@material-ui/icons/Launch"
 import Button from '@material-ui/core/Button'
-import { createTheme, withStyles, makeStyles, ThemeProvider } from '@material-ui/core/styles'
-import { lime, purple } from '@material-ui/core/colors'
+import { withStyles, makeStyles } from '@material-ui/core/styles'
+import { lightGreen } from "@material-ui/core/colors"
 
 export default function Resume() {
 
   const ColorButton = withStyles((theme) => ({
     root: {
-      color: theme.palette.getContrastText(lime['A400']),
-      backgroundColor: lime['A400'],
+      color: theme.palette.getContrastText(lightGreen['400']),
+      backgroundColor: lightGreen['400'],
       '&:hover': {
-        backgroundColor: lime['A700'],
+        backgroundColor: lightGreen['700'],
       },
     },
   }))(Button)
@@ -20,12 +20,6 @@ export default function Resume() {
       margin: theme.spacing(1),
     },
   }))
-
-  const theme = createTheme({
-    palette: {
-      primary: lime,
-    },
-  })
 
   const classes = useStyles()
   

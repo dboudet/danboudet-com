@@ -8,7 +8,8 @@ import About from "./components/About"
 import Portfolio from "./components/Portfolio"
 import Contact from "./components/Contact"
 import Footer from "./components/Footer"
-import { CssBaseline, Toolbar } from "@material-ui/core"
+import { createTheme, CssBaseline } from "@material-ui/core"
+import { green, lightGreen } from '@material-ui/core/colors'
 import AlertDialog from "./components/AlertDialog"
 import { BrowserRouter as Router } from "react-router-dom"
 
@@ -18,12 +19,19 @@ if (!firebase.apps.length) {
 }
 
 export default function App() {
+  const theme = createTheme({
+    palette: {
+      primary: lightGreen,
+      secondary: green
+    },
+  })
+
   return (
     <div className="App" id="top">
       <Router>
         <CssBaseline />
         <Header />
-        <Hero />
+        <HeroAlt />
         <About />
         <Portfolio />
         <Contact />

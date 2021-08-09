@@ -9,14 +9,18 @@ import Typography from "@material-ui/core/Typography"
 import capitolBuilding from '../assets/capitol_building_washington_dc.jpg'
 import lizardImage from "../assets/contemplative-reptile.jpeg"
 import futuramaImage from "../assets/futurama-title.jpeg"
+import { Chip } from "@material-ui/core"
+import { palette } from '@material-ui/system';
+import { lightGreen } from "@material-ui/core/colors"
 
 const useStyles = makeStyles({
   root: {
-    maxWidth: 345,
+    maxWidth: 400,
     margin: '20px 10px',
   },
   media: {
-    height: 140,
+    height: 160,
+    backgroundSize: 'cover'
   },
 })
 
@@ -25,7 +29,7 @@ export default function MediaCard() {
 
   return (
     <>
-      <Card className={classes.root}>
+      <Card elevation="8" className={classes.root}>
         <CardActionArea>
           <a href="https://gcp-api-danb.web.app/" target="_blank">
           <CardMedia
@@ -34,7 +38,7 @@ export default function MediaCard() {
             title="Contemplative Reptile"
           />
           <CardContent>
-            <Typography gutterBottom variant="h5" component="h2">
+            <Typography gutterBottom variant="h5" component="h2" color="textPrimary">
               Representative Finder
             </Typography>
             <Typography variant="body2" color="textSecondary" component="p">
@@ -45,15 +49,15 @@ export default function MediaCard() {
           </a>
         </CardActionArea>
         <CardActions>
-          <Button size="small" color="primary" disabled>
+          <Button size="medium" color="primary" disabled>
             React
           </Button>
-          <Button size="small" color="primary" disabled>
+          <Button size="medium" color="primary" disabled>
             Firebase
           </Button>
         </CardActions>
       </Card>
-      <Card className={classes.root}>
+      <Card elevation="8" className={classes.root}>
         <CardActionArea>
           <CardMedia
             className={classes.media}
@@ -61,7 +65,7 @@ export default function MediaCard() {
             title="Contemplative Reptile"
           />
           <CardContent>
-            <Typography gutterBottom variant="h5" component="h2">
+            <Typography gutterBottom variant="h5" component="h2" color="textPrimary">
               This Website
             </Typography>
             <Typography variant="body2" color="textSecondary" component="p">
@@ -71,18 +75,18 @@ export default function MediaCard() {
           </CardContent>
         </CardActionArea>
         <CardActions>
-          <Button size="small" color="primary" disabled>
+          <Button size="medium" color="primary" disabled>
             React
           </Button>
-          <Button size="small" color="primary" disabled>
+          <Button size="medium" color="primary" disabled>
             Material-UI
           </Button>
-          <Button size="small" color="primary" disabled>
+          <Button size="medium" color="primary" disabled>
             Firebase
           </Button>
         </CardActions>
       </Card>
-      <Card className={classes.root}>
+      <Card elevation="8" className={classes.root}>
         <CardActionArea>
           <a href="https://db-futurama-react.web.app/" target="_blank">
             <CardMedia
@@ -91,7 +95,7 @@ export default function MediaCard() {
               title="Contemplative Reptile"
             />
             <CardContent>
-              <Typography gutterBottom variant="h5" component="h2">
+              <Typography gutterBottom variant="h5" component="h2" color="textPrimary">
                 Futurama Character Info
               </Typography>
               <Typography variant="body2" color="textSecondary" component="p">
@@ -101,10 +105,10 @@ export default function MediaCard() {
           </a>
         </CardActionArea>
         <CardActions>
-          <Button size="small" color="primary" disabled>
+          <Button size="medium" color="primary" disabled>
             React
           </Button>
-          <Button size="small" color="primary" disabled>
+          <Button size="medium" color="primary" disabled>
             Firebase
           </Button>
         </CardActions>
