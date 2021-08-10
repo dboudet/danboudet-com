@@ -7,7 +7,7 @@ import CardMedia from "@material-ui/core/CardMedia"
 import Button from "@material-ui/core/Button"
 import Typography from "@material-ui/core/Typography"
 import capitolBuilding from '../assets/capitol_building_washington_dc.jpg'
-import lizardImage from "../assets/contemplative-reptile.jpeg"
+import headshotWide from "../assets/headshot-2021-wide.png"
 import futuramaImage from "../assets/futurama-title.jpeg"
 import { Chip } from "@material-ui/core"
 import { palette } from '@material-ui/system';
@@ -61,16 +61,15 @@ export default function MediaCard() {
         <CardActionArea>
           <CardMedia
             className={classes.media}
-            image={lizardImage}
-            title="Contemplative Reptile"
+            image={headshotWide}
+            title="DanBoudet.com"
           />
           <CardContent>
             <Typography gutterBottom variant="h5" component="h2" color="textPrimary">
               This Website
             </Typography>
             <Typography variant="body2" color="textSecondary" component="p">
-              Just a front end React website using Material-UI library and
-              Firebase hosting.
+              React portfolio website using Material-UI library and Firebase hosting.
             </Typography>
           </CardContent>
         </CardActionArea>
