@@ -17,7 +17,7 @@ export default function AlertDialog() {
     setOpen(false)
   }
 
-  useEffect(() => setTimeout(handleClickOpen, 1800), [])
+  useEffect(() => setTimeout(handleClickOpen, 3000), [])
 
   return (
     <div>
@@ -32,7 +32,7 @@ export default function AlertDialog() {
         </DialogTitle>
         <DialogContent>
           <DialogContentText id="alert-dialog-description">
-            Thanks for visiting my website. I'm still working on a few things, but please feel free to look around. To contact me, please send me a message on LinkedIn! You'll find a link at the bottom of the page.
+            Thanks for visiting my portfolio! Please feel free to look around, and if you have any questions, please send me a message on <a href="https://www.linkedin.com/in/danboudet/" target="_blank" rel="noreferrer">LinkedIn</a>! You'll find a link at the bottom of the page.
           </DialogContentText>
         </DialogContent>
         <DialogActions>

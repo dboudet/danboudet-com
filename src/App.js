@@ -7,7 +7,6 @@ import Header from "./components/Header"
 import HeroAlt from "./components/HeroAlt"
 import About from "./components/About"
 import Portfolio from "./components/Portfolio"
-import Contact from "./components/Contact"
 import Footer from "./components/Footer"
 import AlertDialog from "./components/AlertDialog"
 import MoreLInks from "./components/MoreLinks"
@@ -30,7 +29,6 @@ export default function App() {
           <About />
           <Portfolio />
           <MoreLInks />
-          {/* <Contact /> */}
           <Footer />
           <AlertDialog />
         </ThemeProvider>

@@ -94,11 +94,11 @@ export default function MediaCard() {
       </Card>
       <Card className={classes.root}>
         <CardActionArea>
-          <a
+          {/* <a
             href="https://gcp-api-danb.web.app/"
             target="_blank"
             rel="noreferrer"
-          >
+          > */}
             <CardMedia
               className={classes.media}
               image={capitolBuilding}
@@ -114,10 +114,10 @@ export default function MediaCard() {
                 Representative Finder
               </Typography>
               <Typography variant="body2" color="textSecondary" component="p">
-                Find your U.S. representatives by address, utilizing Google's Civic Information API and simple authentication.
+                Find your U.S. representatives by address, utilizing Google's Civic Information API and simple authentication. *<em>Temporarily disabled</em>
               </Typography>
             </CardContent>
-          </a>
+          {/* </a> */}
         </CardActionArea>
         <CardActions className={classes.chips}>
           <Chip label="React" variant="outlined" color="primary" />
