@@ -1,6 +1,8 @@
-*, a::before, a::after {
-  margin:0;
-  padding:0;
+*,
+a::before,
+a::after {
+  margin: 0;
+  padding: 0;
   box-sizing: inherit;
 }
 
@@ -9,13 +11,14 @@
   --dbgreen: #278500;
 }
 
-html { scroll-behavior: smooth;}
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 92px;
+}
 
 .App {
-  /* background-color: var(--darkgray); */
   text-align: center;
-  /* color:#FFFFFF; */
-  font-size:1.2em;
+  font-size: 1.2em;
 }
 
 header {
@@ -23,7 +26,6 @@ header {
   position: fixed;
   height: inherit;
   width: 100%;
-  /* background-color: var(--darkgray); */
   background-color: rgba(250, 250, 250, 0.95);
   z-index: 1;
 }
@@ -40,20 +42,23 @@ header {
   max-width:150px;
 } */
 header ul {
-  list-style-type:none;
+  list-style-type: none;
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
 }
 .navlink {
   margin: 0 6px;
+}
+h1 .navlink,
+.mobile-menu-item {
   color: var(--darkgray) !important;
   text-decoration: none !important;
 }
 
 section {
-  min-height:100vh;
-  padding:24px;
+  min-height: 90vh;
+  padding: 24px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -73,23 +78,23 @@ section#hero {
 .dark-bg-overlay {
   width: 100%;
   min-height: 100vh;
-  background-color: rgba(250,250,250,.8);
+  background-color: rgba(250, 250, 250, 0.8);
 }
 #hero > .dark-bg-overlay {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  }
+}
 .alt-bg-overlay {
   width: 100%;
   min-height: 100vh;
-  background-color: rgba(255,255,255,.7);
+  background-color: rgba(255, 255, 255, 0.7);
   display: flex;
   align-items: center;
   justify-content: flex-start;
 }
 #hero p {
-  font-size:1.6vw;
+  font-size: 1.6vw;
 }
 #hero .col-half {
   padding: 16px 20px;
@@ -111,13 +116,23 @@ section#hero {
   height: 300px;
   width: 300px;
   border-radius: 0 40% 0 40%;
-  background-image: url('./assets/headshot.jpg');
-  background-size:contain;
+  background-image: url("./assets/headshot.jpg");
+  background-size: contain;
   margin: 40px 12px;
 }
 
+#about .about-p-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 #about p {
   margin-bottom: 20px;
+  flex-basis: 50%;
+  width: 800px;
+  max-width: 90vw;
+  font-size: 1.2em;
 }
 
 #portfolio-card-container {
@@ -126,29 +141,70 @@ section#hero {
   justify-content: space-evenly;
 }
 #portfolio-card-container a {
-  text-decoration:none;
-}
-
-footer {
-  padding:24px;
-}
-footer, footer a {
-  /* color: #EFEFEF; */
   text-decoration: none;
 }
 
-@media screen and (max-width:600px) {
-  header { padding:12px;}
+#contact label {
+  font-size: 1.4em;
+  font-weight: bold;
+}
+#contact input {
+  font-size: 1em;
+  line-height: 2em;
+  padding: 6px 12px;
+  margin-bottom: 12px;
+  border-radius: 10px;
+  min-width: 300px;
+}
+#contact textarea {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1em;
+  padding: 6px 12px;
+  margin-bottom: 12px;
+  height: 300px;
+  width: 600px;
+  max-width: 90vw;
+  border-radius: 10px;
+}
+#contact input[type="submit"] {
+  background-color: var(--dbgreen);
+  color: #ffffff !important;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+#more .icon-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.icon-list svg {
+  font-size: 4em;
+  margin: 0 10px;
+}
+
+footer {
+  padding: 24px;
+}
+footer,
+footer a {
+  text-decoration: none;
+}
+
+@media screen and (max-width: 600px) {
+  /* header {
+    padding: 18px;
+  }
   #header-flex-container {
     align-items: flex-end;
-  }
-  header ul {
+  } */
+  /* header ul {
     flex-direction: column;
     text-align: right;
-  }
-  h1 {
+  } */
+  /* h1 {
     line-height: 0.9em;
-  }
+  } */
   /* h1 span.subhead {
     font-size: 4vw;
   } */
@@ -162,14 +218,17 @@ footer, footer a {
     justify-content: center;
     padding-top: 200px;
   }
-  #hero .col-half.left, .hero-alt {
-    max-width:80%;
+  #hero .col-half.left,
+  .hero-alt {
+    max-width: 80%;
     text-align: center;
   }
-  #hero .col-half.left h2, #hero .hero-alt h2 {
+  #hero .col-half.left h2,
+  #hero .hero-alt h2 {
     font-size: 2em;
   }
-  #hero .col-half.left p, #hero .hero-alt p {
+  #hero .col-half.left p,
+  #hero .hero-alt p {
     font-size: 1.4em;
   }
   .section-header {

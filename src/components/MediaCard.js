@@ -6,58 +6,33 @@ import CardContent from "@material-ui/core/CardContent"
 import CardMedia from "@material-ui/core/CardMedia"
 import Button from "@material-ui/core/Button"
 import Typography from "@material-ui/core/Typography"
-import capitolBuilding from '../assets/capitol_building_washington_dc.jpg'
+import capitolBuilding from "../assets/capitol_building_washington_dc.jpg"
 import headshotWide from "../assets/headshot-2021-wide.png"
 import futuramaImage from "../assets/futurama-title.jpeg"
 import { Chip } from "@material-ui/core"
-import { palette } from '@material-ui/system';
+import { palette } from "@material-ui/system"
 import { lightGreen } from "@material-ui/core/colors"
 
-const useStyles = makeStyles({
+const useStyles = makeStyles((theme) => ({
   root: {
     maxWidth: 400,
-    margin: '20px 10px',
+    margin: "20px 10px",
   },
   media: {
     height: 160,
-    backgroundSize: 'cover'
+    backgroundSize: "cover",
   },
-})
+  chips: {
+    fontWeight: "bold",
+  },
+}))
 
 export default function MediaCard() {
   const classes = useStyles()
 
   return (
     <>
-      <Card elevation="8" className={classes.root}>
-        <CardActionArea>
-          <a href="https://gcp-api-danb.web.app/" target="_blank">
-          <CardMedia
-            className={classes.media}
-            image={capitolBuilding}
-            title="Contemplative Reptile"
-          />
-          <CardContent>
-            <Typography gutterBottom variant="h5" component="h2" color="textPrimary">
-              Representative Finder
-            </Typography>
-            <Typography variant="body2" color="textSecondary" component="p">
-              Simple React app using Google's Civic Information API to list U.S.
-              representatives by address.
-            </Typography>
-          </CardContent>
-          </a>
-        </CardActionArea>
-        <CardActions>
-          <Button size="medium" color="primary" disabled>
-            React
-          </Button>
-          <Button size="medium" color="primary" disabled>
-            Firebase
-          </Button>
-        </CardActions>
-      </Card>
-      <Card elevation="8" className={classes.root}>
+      <Card className={classes.root}>
         <CardActionArea>
           <CardMedia
             className={classes.media}
@@ -65,51 +40,88 @@ export default function MediaCard() {
             title="DanBoudet.com"
           />
           <CardContent>
-            <Typography gutterBottom variant="h5" component="h2" color="textPrimary">
+            <Typography
+              gutterBottom
+              variant="h5"
+              component="h2"
+              color="textPrimary"
+            >
               This Website
             </Typography>
             <Typography variant="body2" color="textSecondary" component="p">
-              React portfolio website using Material-UI library and Firebase hosting.
+              React portfolio website using Material-UI library, deployed to
+              Firebase.
             </Typography>
           </CardContent>
         </CardActionArea>
-        <CardActions>
-          <Button size="medium" color="primary" disabled>
-            React
-          </Button>
-          <Button size="medium" color="primary" disabled>
-            Material-UI
-          </Button>
-          <Button size="medium" color="primary" disabled>
-            Firebase
-          </Button>
+        <CardActions className={classes.chips}>
+          <Chip label="React" variant="outlined" color="primary" />
+          <Chip label="Firebase" variant="outlined" color="primary" />
+          <Chip label="Material-UI" variant="outlined" color="primary" />
         </CardActions>
       </Card>
-      <Card elevation="8" className={classes.root}>
+      <Card className={classes.root}>
         <CardActionArea>
-          <a href="https://db-futurama-react.web.app/" target="_blank">
+          <a
+            href="https://db-futurama-react.web.app/"
+            target="_blank"
+            rel="noreferrer"
+          >
             <CardMedia
               className={classes.media}
               image={futuramaImage}
-              title="Contemplative Reptile"
+              title="SampleAPIs.com Futurama Character Info"
             />
             <CardContent>
-              <Typography gutterBottom variant="h5" component="h2" color="textPrimary">
+              <Typography
+                gutterBottom
+                variant="h5"
+                component="h2"
+                color="textPrimary"
+              >
                 Futurama Character Info
               </Typography>
               <Typography variant="body2" color="textSecondary" component="p">
-                Uses sampleapis.com to find Futurama character info.
+                Find Futurama character info, utilizing SampleAPIs.com API.
               </Typography>
             </CardContent>
           </a>
         </CardActionArea>
-        <CardActions>
-          <Button size="medium" color="primary" disabled>
-            React
-          </Button>
-          <Button size="medium" color="primary" disabled>
-            Firebase
-          </Button>
+        <CardActions className={classes.chips}>
+          <Chip label="React" variant="outlined" color="primary" />
+          <Chip label="Firebase" variant="outlined" color="primary" />
+        </CardActions>
+      </Card>
+      <Card className={classes.root}>
+        <CardActionArea>
+          <a
+            href="https://gcp-api-danb.web.app/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <CardMedia
+              className={classes.media}
+              image={capitolBuilding}
+              title="GCP API Representative Finder"
+            />
+            <CardContent>
+              <Typography
+                gutterBottom
+                variant="h5"
+                component="h2"
+                color="textPrimary"
+              >
+                Representative Finder
+              </Typography>
+              <Typography variant="body2" color="textSecondary" component="p">
+                Find your U.S. representatives by address, utilizing Google's Civic Information API and simple authentication.
+              </Typography>
+            </CardContent>
+          </a>
+        </CardActionArea>
+        <CardActions className={classes.chips}>
+          <Chip label="React" variant="outlined" color="primary" />
+          <Chip label="Firebase" variant="outlined" color="primary" />
         </CardActions>
       </Card>
     </>

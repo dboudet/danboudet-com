@@ -1,4 +1,3 @@
-import Headshot from "./Headshot"
 import heroBackground from "../assets/full-headshot-2021.jpg"
 
 const heroStyle = {

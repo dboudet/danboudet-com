@@ -12,8 +12,8 @@ const portfolioStyle = {
 export default function Portfolio() {
   return (
     <section id="portfolio" style={portfolioStyle}>
-      <div class="dark-bg-overlay">
-        <a name="portfolio"></a>
+      <a name="portfolio" title="portfolio"></a>
+      <div className="dark-bg-overlay">
         <h2 className="section-header">Portfolio</h2>
         <div id="portfolio-card-container">
           <MediaCard />

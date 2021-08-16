@@ -1,10 +1,10 @@
-import React, { useState, useEffect } from 'react'
-import Button from '@material-ui/core/Button'
-import Dialog from '@material-ui/core/Dialog'
-import DialogActions from '@material-ui/core/DialogActions'
-import DialogContent from '@material-ui/core/DialogContent'
-import DialogContentText from '@material-ui/core/DialogContentText'
-import DialogTitle from '@material-ui/core/DialogTitle'
+import React, { useState, useEffect } from "react"
+import Button from "@material-ui/core/Button"
+import Dialog from "@material-ui/core/Dialog"
+import DialogActions from "@material-ui/core/DialogActions"
+import DialogContent from "@material-ui/core/DialogContent"
+import DialogContentText from "@material-ui/core/DialogContentText"
+import DialogTitle from "@material-ui/core/DialogTitle"
 
 export default function AlertDialog() {
   const [open, setOpen] = useState(false)
@@ -17,7 +17,7 @@ export default function AlertDialog() {
     setOpen(false)
   }
 
-  useEffect(() => setTimeout(handleClickOpen,2000),[])
+  useEffect(() => setTimeout(handleClickOpen, 1800), [])
 
   return (
     <div>
@@ -27,15 +27,17 @@ export default function AlertDialog() {
         aria-labelledby="alert-dialog-title"
         aria-describedby="alert-dialog-description"
       >
-        <DialogTitle id="alert-dialog-title">{"Under Construction"}</DialogTitle>
+        <DialogTitle id="alert-dialog-title">
+          {"Thanks for visiting!"}
+        </DialogTitle>
         <DialogContent>
           <DialogContentText id="alert-dialog-description">
-            This website is currently under construction. Feel free to look around... Please just keep in mind that it's not finished yet. Thanks!
+            Thanks for visiting my website. I'm still working on a few things, but please feel free to look around. To contact me, please send me a message on LinkedIn! You'll find a link at the bottom of the page.
           </DialogContentText>
         </DialogContent>
         <DialogActions>
-          <Button onClick={handleClose} color="primary" autoFocus>
-            I Understand
+          <Button onClick={handleClose} color="primary" disableFocusRipple="true" autoFocus>
+            <strong>Continue</strong>
           </Button>
         </DialogActions>
       </Dialog>
