@@ -9,6 +9,7 @@ import Typography from "@material-ui/core/Typography"
 import capitolBuilding from "../assets/capitol_building_washington_dc.jpg"
 import headshotWide from "../assets/headshot-2021-wide.png"
 import futuramaImage from "../assets/futurama-title.jpeg"
+import atsCardImage from "../assets/ats-demo-update-red.gif"
 import { Chip } from "@material-ui/core"
 import { palette } from "@material-ui/system"
 import { lightGreen } from "@material-ui/core/colors"
@@ -32,6 +33,41 @@ export default function MediaCard() {
 
   return (
     <>
+      <Card className={classes.root}>
+        <CardActionArea>
+          <a
+            href="http://dboudet-ats.s3-website-us-east-1.amazonaws.com/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <CardMedia
+              className={classes.media}
+              image={atsCardImage}
+              title="Applicant Assistant"
+            />
+            <CardContent>
+              <Typography
+                gutterBottom
+                variant="h5"
+                component="h2"
+                color="textPrimary"
+              >
+                Applicant Assistant <span style={{color:"#DD0000"}}>(DEMO)</span>
+              </Typography>
+              <Typography variant="body2" color="textSecondary" component="p">
+                Applicant Tracking System &ndash; SERN (SQERN?) stack deployed to AWS
+              </Typography>
+            </CardContent>
+          </a>
+        </CardActionArea>
+        <CardActions className={classes.chips}>
+          <Chip label="AWS" variant="outlined" color="primary" />
+          <Chip label="MySQL" variant="outlined" color="primary" />
+          <Chip label="React" variant="outlined" color="primary" />
+          <Chip label="Express" variant="outlined" color="primary" />
+          <Chip label="Node" variant="outlined" color="primary" />
+        </CardActions>
+      </Card>
       <Card className={classes.root}>
         <CardActionArea>
           <CardMedia
@@ -86,38 +122,6 @@ export default function MediaCard() {
               </Typography>
             </CardContent>
           </a>
-        </CardActionArea>
-        <CardActions className={classes.chips}>
-          <Chip label="React" variant="outlined" color="primary" />
-          <Chip label="Firebase" variant="outlined" color="primary" />
-        </CardActions>
-      </Card>
-      <Card className={classes.root}>
-        <CardActionArea>
-          {/* <a
-            href="https://gcp-api-danb.web.app/"
-            target="_blank"
-            rel="noreferrer"
-          > */}
-            <CardMedia
-              className={classes.media}
-              image={capitolBuilding}
-              title="GCP API Representative Finder"
-            />
-            <CardContent>
-              <Typography
-                gutterBottom
-                variant="h5"
-                component="h2"
-                color="textPrimary"
-              >
-                Representative Finder
-              </Typography>
-              <Typography variant="body2" color="textSecondary" component="p">
-                Find your U.S. representatives by address, utilizing Google's Civic Information API and simple authentication. *<em>Temporarily disabled</em>
-              </Typography>
-            </CardContent>
-          {/* </a> */}
         </CardActionArea>
         <CardActions className={classes.chips}>
           <Chip label="React" variant="outlined" color="primary" />

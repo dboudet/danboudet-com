@@ -24,7 +24,7 @@ export default function Resume() {
 
   return (
     <a
-      href="https://danboudet-com.s3.us-east-2.amazonaws.com/dan-boudet-resume-web.pdf"
+      href="https://danboudet.com/assets/boudet-resume-aug2021-web.pdf"
       target="_blank"
       rel="noreferrer"
     >
