@@ -24,9 +24,10 @@ export default function Resume() {
 
   return (
     <a
-      href="https://danboudet.com/assets/boudet-resume-aug2021-web.pdf"
+      href={"/assets/dan-boudet-resume-091521.pdf"}
       target="_blank"
       rel="noreferrer"
+      style={{textDecoration:"none"}}
     >
       {/* <ThemeProvider theme={theme}> */}
         <Button

@@ -10,6 +10,8 @@ import capitolBuilding from "../assets/capitol_building_washington_dc.jpg"
 import headshotWide from "../assets/headshot-2021-wide.png"
 import futuramaImage from "../assets/futurama-title.jpeg"
 import atsCardImage from "../assets/ats-demo-update-red.gif"
+import ccpbcLogo from "../assets/ccpbc-logo-2.png"
+import breweryLogos from "../assets/brewery-logos.png"
 import { Chip } from "@material-ui/core"
 import { palette } from "@material-ui/system"
 import { lightGreen } from "@material-ui/core/colors"
@@ -25,6 +27,8 @@ const useStyles = makeStyles((theme) => ({
   },
   chips: {
     fontWeight: "bold",
+    flexWrap: "wrap",
+    justifyContent: "space-around",
   },
 }))
 
@@ -52,10 +56,10 @@ export default function MediaCard() {
                 component="h2"
                 color="textPrimary"
               >
-                Applicant Assistant <span style={{color:"#DD0000"}}>(DEMO)</span>
+                Applicant Assistant Demo
               </Typography>
               <Typography variant="body2" color="textSecondary" component="p">
-                Applicant Tracking System &ndash; SERN (SQERN?) stack deployed to AWS
+                I developed this Applicant Tracking System demo in two weeks: It's a full stack application using a MySQL database, express/Node API, and React front-end, deployed to AWS. Login available upon request.
               </Typography>
             </CardContent>
           </a>
@@ -82,11 +86,10 @@ export default function MediaCard() {
               component="h2"
               color="textPrimary"
             >
-              This Website
+              Portfolio Website
             </Typography>
             <Typography variant="body2" color="textSecondary" component="p">
-              React portfolio website using Material-UI library, deployed to
-              Firebase.
+              This quick portfolio site was built on React with Material-UI components, and hosted on Firebase.
             </Typography>
           </CardContent>
         </CardActionArea>
@@ -115,10 +118,10 @@ export default function MediaCard() {
                 component="h2"
                 color="textPrimary"
               >
-                Futurama Character Info
+                Futurama Character Info Generator
               </Typography>
               <Typography variant="body2" color="textSecondary" component="p">
-                Find Futurama character info, utilizing SampleAPIs.com API.
+                This was a simple little side project to display Futurama character info from SampleAPIs.com.
               </Typography>
             </CardContent>
           </a>
@@ -126,6 +129,72 @@ export default function MediaCard() {
         <CardActions className={classes.chips}>
           <Chip label="React" variant="outlined" color="primary" />
           <Chip label="Firebase" variant="outlined" color="primary" />
+        </CardActions>
+      </Card>
+      <Card className={classes.root}>
+        <CardActionArea>
+          <a
+            href="https://www.palmbeachculture.com/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <CardMedia
+              className={classes.media}
+              image={ccpbcLogo}
+              title="Cultural Council for PBC website"
+            />
+            <CardContent>
+              <Typography
+                gutterBottom
+                variant="h5"
+                component="h2"
+                color="textPrimary"
+              >
+                palmbeachculture.com
+              </Typography>
+              <Typography variant="body2" color="textSecondary" component="p">
+                During my 8 years at the Cultural Council for Palm Beach County, I managed all aspects of palmbeachculture.com, migrating to a WordPress CMS hosted on AWS in 2014.
+              </Typography>
+            </CardContent>
+          </a>
+        </CardActionArea>
+        <CardActions className={classes.chips}>
+          <Chip label="WordPress" variant="outlined" color="primary" />
+          <Chip label="AWS" variant="outlined" color="primary" />
+          <Chip label="Cloudflare" variant="outlined" color="primary" />
+          <Chip label="Nginx" variant="outlined" color="primary" />
+        </CardActions>
+      </Card>
+      <Card className={classes.root}>
+        <CardActionArea>
+          <a
+            href="https://twistedtrunkbrewing.com/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <CardMedia
+              className={classes.media}
+              image={breweryLogos}
+              title="Twisted Trunk, Steamhorse, and TBC brewery websites"
+            />
+            <CardContent>
+              <Typography
+                gutterBottom
+                variant="h5"
+                component="h2"
+                color="textPrimary"
+              >
+                Local Brewery Websites
+              </Typography>
+              <Typography variant="body2" color="textSecondary" component="p">
+                In 2018, I created a family of easy-to-use, low-maintenance WordPress websites for <a href="https://twistedtrunkbrewing.com/" target="_blank" rel="noreferrer">Twisted Trunk</a>, <a href="https://steamhorsebrewing.com/" target="_blank" rel="noreferrer">Steamhorse</a>, and <a href="https://tequestabrewing.com/" target="_blank" rel="noreferrer">TBC</a> breweries. The main priority was to make it easy to update their tap lists, using custom post types.
+              </Typography>
+            </CardContent>
+          </a>
+        </CardActionArea>
+        <CardActions className={classes.chips}>
+          <Chip label="WordPress" variant="outlined" color="primary" />
+          <Chip label="GoDaddy" variant="outlined" color="primary" />
         </CardActions>
       </Card>
     </>

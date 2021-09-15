@@ -6,15 +6,6 @@ export default function About() {
       <a name="about" title="About Me" className="offset-anchor"></a>
       <h2 className="section-header">About Me</h2>
       <div className="about-p-container">
-        {/* <p>
-          <em>Coming soon...</em>
-        </p>
-        <p>
-          <em>
-            In the meantime, please take a look at my resume, as well as my
-            LinkedIn and GitHub profiles further below.
-          </em>
-        </p> */}
         <p>
           I began my career at The Palm Beach Post, spending 7 years in various
           AdOps roles and gaining a breadth of knowledge across all aspects of
