@@ -24,7 +24,7 @@ export default function Resume() {
 
   return (
     <a
-      href={"/assets/dan-boudet-resume-091521.pdf"}
+      href={"/assets/dan-boudet-resume-web-092221.pdf"}
       target="_blank"
       rel="noreferrer"
       style={{textDecoration:"none"}}

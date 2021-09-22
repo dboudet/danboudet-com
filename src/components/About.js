@@ -16,7 +16,7 @@ export default function About() {
         <p>
           I've always had a knack for programming, and more generally, I'm a
           problem-solver &ndash; instinctually drawn toward logic challenges.
-          Now armed with full stack capabilties and modern software engineering
+          Now armed with full stack capabilities and modern software engineering
           practices, I'm thrilled to shift my career back to a more technical
           path.
         </p>
