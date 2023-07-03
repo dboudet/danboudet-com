@@ -1,5 +1,6 @@
 import LaunchIcon from "@material-ui/icons/Launch"
 import Button from "@material-ui/core/Button"
+import ResumePdf from "../assets/dan-boudet-resume-070123.pdf"
 // import { withStyles, makeStyles, ThemeProvider } from "@material-ui/core/styles"
 // import { lightGreen } from "@material-ui/core/colors"
 
@@ -24,7 +25,7 @@ export default function Resume() {
 
   return (
     <a
-      href={"/assets/dan-boudet-resume-070123.pdf"}
+      href={ResumePdf}
       target="_blank"
       rel="noreferrer"
       style={{textDecoration:"none"}}
