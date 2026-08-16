@@ -7,16 +7,12 @@ export default function About() {
       <h2 className="section-header">About Me</h2>
       <div className="about-p-container">
         <p>
-          I began my career at The Palm Beach Post, spending 7 years in various
-          AdOps roles and gaining a breadth of knowledge across all aspects of
-          digital marketing and basic web development. In 2013, I joined the
-          Cultural Council for Palm Beach County, where I had the opportunity to
-          directly manage and grow palmbeachculture.com for eight years.
-        </p>
-        <p>
-          I've always had a knack for programming, and more generally, I'm a
-          problem-solver &ndash; instinctually drawn toward logic challenges.
-          Now armed with the training to build full stack web applications, I'm thoroughly enjoying building beautifully functional JavaScript apps.
+          Cloud Software Engineer focused on designing and building cloud-native
+          applications that are practical, efficient, scalable, and
+          maintainable. I enjoy solving complex technical problems with a
+          systems-level perspective, combining thoughtful solution design,
+          attention to detail, and strong collaboration across engineering,
+          product, and business teams.
         </p>
       </div>
       <Resume />

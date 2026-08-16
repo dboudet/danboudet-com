@@ -1,6 +1,6 @@
 import LaunchIcon from "@material-ui/icons/Launch"
 import Button from "@material-ui/core/Button"
-import ResumePdf from "../assets/dan-boudet-resume-070123.pdf"
+import ResumePdf from "../assets/dan-boudet-resume-081626.pdf"
 // import { withStyles, makeStyles, ThemeProvider } from "@material-ui/core/styles"
 // import { lightGreen } from "@material-ui/core/colors"
 
